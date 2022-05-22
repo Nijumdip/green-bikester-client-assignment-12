@@ -9,7 +9,6 @@ const ReviewCard = ({ img, cardTitle, info }) => {
       <div class="card-body text-left">
       <h2 className="card-title">{cardTitle}</h2>
       <p>{info}</p>
-        
       </div>
     </div>
     

@@ -5,13 +5,13 @@ const BusinessSummary = () => {
   return (
     <div className="px-12 pb-10">
       <div class="flex flex-col w-full border-5 border-opacity-50 lg:w-full">
-        <div class="grid h-20 card rounded-box place-items-center text-3xl font-bold text-emerald-900">
+        <div class="grid h-20 card rounded-box place-items-center text-4xl font-bold text-emerald-900">
           Welcome to Green Bikester
         </div>
         <div class="divider grid place-items-center h-1 px-24 bg-gradient-to-r from-white via-emerald-900 to-white"></div>
         <div className="text-xl text-emerald-900">
           Green Bikester is a professional bike parts manufacturer and focus on
-          higher-end products and expending design capabilities.
+          higher-end <br /> products and expending design capabilities.
         </div>
         <div class="divider grid place-items-center h-1 px-24 bg-gradient-to-r from-white via-emerald-900 to-white"></div>
       </div>
