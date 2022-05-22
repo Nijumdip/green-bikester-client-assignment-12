@@ -4,6 +4,7 @@ import About from "./Pages/About/About";
 import Home from "./Pages/Home/Home";
 import NavMenu from "./Pages/Home/NavMenu";
 import Login from "./Pages/Login/Login";
+import Footer from "./Pages/Shared/Footer";
 import Page404 from "./Pages/Shared/Page404";
 
 function App() {
@@ -15,8 +16,8 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="login" element={<Login />} />
         <Route path="*" element={<Page404 />} />
-        </Routes>
-
+      </Routes>
+      <Footer></Footer>
     </div>
   );
 }
