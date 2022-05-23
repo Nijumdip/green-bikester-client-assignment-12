@@ -3,34 +3,58 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer
-      className=" p-10 mt-10 bg-emerald-900 text-white" >
+    <footer className=" p-10 mt-10 bg-emerald-900 text-white">
       <div className="footer pb-10">
         <div>
           <span className="footer-title">Services</span>
-          <Link to="/" className="link link-hover">Branding</Link>
-          <Link to="/" className="link link-hover">Design</Link>
-          <Link to="/" className="link link-hover">Marketing</Link>
-          <Link to="/" className="link link-hover">Advertisement</Link>
+          <Link to="/" className="link link-hover">
+            Branding
+          </Link>
+          <Link to="/" className="link link-hover">
+            Design
+          </Link>
+          <Link to="/" className="link link-hover">
+            Marketing
+          </Link>
+          <Link to="/" className="link link-hover">
+            Advertisement
+          </Link>
         </div>
         <div>
           <span className="footer-title">Company</span>
-          <Link to="/about" className="link link-hover">About us</Link>
-          <Link to="/contact" className="link link-hover">Contact</Link>
-          <Link to="/" className="link link-hover">Jobs</Link>
-          <Link to="/" className="link link-hover">Press kit</Link>
+          <Link to="/about" className="link link-hover">
+            About us
+          </Link>
+          <Link to="/contact" className="link link-hover">
+            Contact
+          </Link>
+          <Link to="/" className="link link-hover">
+            Jobs
+          </Link>
+          <Link to="/" className="link link-hover">
+            Press kit
+          </Link>
         </div>
         <div>
           <span className="footer-title">Legal</span>
-          <Link to="/" className="link link-hover">Terms of use</Link>
-          <Link to="/" className="link link-hover">Privacy policy</Link>
-          <Link to="/" className="link link-hover">Cookie policy</Link>
+          <Link to="/" className="link link-hover">
+            Terms of use
+          </Link>
+          <Link to="/" className="link link-hover">
+            Privacy policy
+          </Link>
+          <Link to="/" className="link link-hover">
+            Cookie policy
+          </Link>
         </div>
+        
         <div>
           <span className="footer-title">Newsletter</span>
           <div className="form-control w-80">
             <label className="label">
-              <span className="label-text text-white">Enter your email address</span>
+              <span className="label-text text-white">
+                Enter your email address
+              </span>
             </label>
             <div className="relative">
               <input
@@ -44,6 +68,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
       </div>
       <div>
         <p>Copyright © 2022 - All right reserved </p>
