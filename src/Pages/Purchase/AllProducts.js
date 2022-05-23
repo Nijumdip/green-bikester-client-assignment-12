@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import Product from "./Product";
+import React, { useEffect, useState } from 'react';
+import AllProduct from './AllProduct';
 
-const Products = () => {
-  const [products, setProducts] = useState([]);
+const AllProducts = () => {
+    const [products, setProducts] = useState([]);
 
   useEffect(() => {
     const url = "/products.json";
@@ -18,20 +18,20 @@ const Products = () => {
         </div>
         <div class="divider grid place-items-center h-1 px-24 bg-gradient-to-r from-white via-emerald-900 to-white"></div>
         <div className="text-xl text-emerald-900">
-        Our Products
+        Select Your Products
         </div>
         <div class="divider grid place-items-center h-1 px-24 bg-gradient-to-r from-white via-emerald-900 to-white"></div>
       </div>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {
-            products.slice(0,3).map((product) => (<Product 
+            products.map((product) => (<AllProduct 
                 key={product._id}
                 product={product}
-            ></Product>
+            ></AllProduct>
         ))}
       </div>
     </div>
   );
 };
 
-export default Products;
+export default AllProducts;

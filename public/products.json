@@ -1,0 +1,65 @@
+[
+    {
+       "_id":1,
+       "name":"Bicycle Headsets",
+       "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor architecto tenetur unde neque culpa libero omnis? Deserunt perspiciatis unde magni.",
+       "img":"https://cdn.ready-market.com/101/3fdd3b61//Templates/pic/m/A01_Headsets.jpg?v=ce1e790e",
+       "minimumOrder":"50",
+       "quantity":"5000",
+       "price":"130"
+    },
+    {
+       "_id":2,
+       "name":"Bicycle Bottom Brackets",
+       "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor architecto tenetur unde neque culpa libero omnis? Deserunt perspiciatis unde magni.",
+       "img":"https://cdn.ready-market.com/101/3fdd3b61//Templates/pic/m/A02_Bottom-Brackets.jpg?v=ce1e790e",
+       "minimumOrder":"50",
+       "quantity":"5000",
+       "price":"100"
+    },
+    {
+       "_id":3,
+       "name":"Bicycle Chainwheels",
+       "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor architecto tenetur unde neque culpa libero omnis? Deserunt perspiciatis unde magni.",
+       "img":"https://cdn.ready-market.com/101/3fdd3b61//Templates/pic/m/A03_Chainwheels.jpg?v=ce1e790e",
+       "minimumOrder":"50",
+       "quantity":"5000",
+       "price":"160"
+    },
+    {
+       "_id":4,
+       "name":"Bicycle and E-bicycle Pedals",
+       "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor architecto tenetur unde neque culpa libero omnis? Deserunt perspiciatis unde magni.",
+       "img":"https://cdn.ready-market.com/101/3fdd3b61//Templates/pic/m/A04_Pedals.jpg?v=ce1e790e",
+       "minimumOrder":"50",
+       "quantity":"5000",
+       "price":"140"
+    },
+    {
+       "_id":5,
+       "name":"Bicycle Hubs",
+       "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor architecto tenetur unde neque culpa libero omnis? Deserunt perspiciatis unde magni.",
+       "img":"https://cdn.ready-market.com/101/3fdd3b61//Templates/pic/m/A05_Hub.jpg?v=ce1e790e",
+       "minimumOrder":"50",
+       "quantity":"5000",
+       "price":"100"
+    },
+    {
+       "_id":6,
+       "name":"Green Bikester New Products",
+       "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor architecto tenetur unde neque culpa libero omnis? Deserunt perspiciatis unde magni.",
+       "img":"https://cdn.ready-market.com/101/3fdd3b61//Templates/pic/m/NECO%205.jpg?v=ce1e790e",
+       "minimumOrder":"50",
+       "quantity":"5000",
+       "price":"110"
+    },
+    {
+       "_id":7,
+       "name":"E-BIKE MOTOR",
+       "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor architecto tenetur unde neque culpa libero omnis? Deserunt perspiciatis unde magni.",
+       "img":"https://cdn.ready-market.com/101/3fdd3b61//Templates/pic/m/MM60.jpg?v=ce1e790e",
+       "minimumOrder":"50",
+       "quantity":"5000",
+       "price":"190"
+    }
+ ]

@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Product = ({ product }) => {
+const AllProduct = ({product}) => {
     const { name, img, description, minimumOrder, quantity, price } = product;
   return (
     <div className="card bg-base-100 shadow-xl">
@@ -15,9 +15,9 @@ const Product = ({ product }) => {
         <h6>Available Quantity : {quantity}</h6>
         <h6>Price : $ {price}</h6>
       </div>
-      <Link to="/purchase"><button className=" btn w-64 rounded-full bg-emerald-900 btn-outline hover:bg-emerald-900 text-white mb-4">see more</button></Link>
+      <Link to="/purchase"><button className=" btn w-64 rounded-full bg-emerald-900 btn-outline hover:bg-emerald-900 text-white mb-4">order now</button></Link>
     </div>
   );
 };
 
-export default Product;
+export default AllProduct;
