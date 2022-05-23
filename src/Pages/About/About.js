@@ -1,4 +1,6 @@
 import React from "react";
+import SummeryGraph from "./SummeryGraph";
+import Team from "./Team";
 
 const About = () => {
   return (
@@ -55,8 +57,10 @@ const About = () => {
         <br />
         <p className="font-bold">Environment and Health Related Information.pdf</p>
         <br />
-        <p className="font-bold">Environment Emergency Measure.pdf</p>
+        <p className="font-bold ">Environment Emergency Measure.pdf</p>
       </div>
+      <Team></Team>
+      <SummeryGraph></SummeryGraph>
     </div>
   );
 };

@@ -8,35 +8,35 @@ const HotProducts = () => {
         <div class="carousel-item">
           <img
             src="https://cdn.ready-market.com/101/3fdd3b61//Templates/pic/m/Assebling%20H324MP.jpg?v=ce1e790e"
-            className="w-64 h-96 rounded-lg shadow-2xl"
+            className=" w-64 h-96 rounded-lg shadow-2xl"
             alt="Bike"
           />
         </div>
         <div class="carousel-item">
           <img
             src="https://cdn.ready-market.com/101/3fdd3b61//Templates/pic/A0601.jpg?v=ce1e790e"
-            className="w-64 h-96 rounded-lg shadow-2xl"
+            className=" w-64 h-96 rounded-lg shadow-2xl"
             alt="Bike"
           />
         </div>
         <div class="carousel-item">
           <img
             src="https://cdn.ready-market.com/101/3fdd3b61//Templates/pic/m/NECO14%E7%B7%8A%E5%9B%BA%E9%8E%96.jpg?v=ce1e790e"
-            className="w-64 h-96 rounded-lg shadow-2xl"
+            className=" w-64 h-96 rounded-lg shadow-2xl"
             alt="Bike"
           />
         </div>
         <div class="carousel-item">
           <img
             src="https://cdn.ready-market.com/101/3fdd3b61//Templates/pic/m/H324MP.jpg?v=ce1e790e"
-            className="w-64 h-96 rounded-lg shadow-2xl"
+            className=" w-64 h-96 rounded-lg shadow-2xl"
             alt="Bike"
           />
         </div>
         <div class="carousel-item">
           <img
             src="https://cdn.ready-market.com/101/3fdd3b61//Templates/pic/m/NECO%205.jpg?v=ce1e790e"
-            className="w-64 h-96 rounded-lg shadow-2xl"
+            className=" w-64 h-96 rounded-lg shadow-2xl"
             alt="Bike"
           />
         </div>

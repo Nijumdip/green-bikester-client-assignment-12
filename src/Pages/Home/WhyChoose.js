@@ -13,7 +13,7 @@ const WhyChoose = () => {
       There are dozens of reasons why our clients choose Green Bikester <br /> as their bike service provider of choice.
       </div>
       <div class="divider grid place-items-center h-1 px-24 bg-gradient-to-r from-white via-emerald-900 to-white"></div>
-    </div>
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 py-10 my-5">
         <WhyChooseCard
           cardTitle="Reliable Services"
