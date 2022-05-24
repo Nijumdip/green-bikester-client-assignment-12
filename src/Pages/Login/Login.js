@@ -5,7 +5,6 @@ import {
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
-// import Loading from "../Shared/Loading";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Loading from "../Shared/Loading";
 
@@ -124,7 +123,7 @@ const Login = () => {
             <p>
               <small>
                 New to Green Bikester ?{" "}
-                <Link className="text-primary" to="/signup">
+                <Link className="text-emerald-900" to="/signup">
                   Create New Account
                 </Link>
               </small>

@@ -4,6 +4,7 @@ import About from "./Pages/About/About";
 import Home from "./Pages/Home/Home";
 import NavMenu from "./Pages/Home/NavMenu";
 import Login from "./Pages/Login/Login";
+import SignUp from "./Pages/Login/SignUp";
 import Purchases from "./Pages/Purchase/Purchases";
 import Footer from "./Pages/Shared/Footer";
 import Page404 from "./Pages/Shared/Page404";
@@ -17,6 +18,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="purchase" element={<Purchases />} />
         <Route path="login" element={<Login />} />
+        <Route path="signup" element={<SignUp />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
       <Footer></Footer>
