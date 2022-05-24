@@ -14,7 +14,7 @@ const SummeryGraph = () => {
         <div className="divider grid place-items-center h-1 px-24 bg-gradient-to-r from-white via-emerald-900 to-white"></div>
       </div>
 
-      <div className="stats shadow">
+      <div className="stats shadow flex flex-row w-full border-5 border-opacity-50 lg:w-full">
         <div className="stat">
           <div className="stat-figure text-primary">
             <svg

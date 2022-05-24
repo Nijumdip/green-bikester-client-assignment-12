@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import auth from "../../firebase.int";
 import {
-  useSignInWithEmailAndPassword,
+  useCreateUserWithEmailAndPassword,
   useSignInWithGoogle,
+  useUpdateProfile,
 } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -10,10 +11,14 @@ import Loading from "../Shared/Loading";
 
 const SignUp = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
-  const {register,formState: { errors },handleSubmit} = useForm();
-  const [signInWithEmailAndPassword, user, loading, error] =
-    useSignInWithEmailAndPassword(auth);
-  //   const [token]=useToken(user || gUser)
+  const { register, formState: { errors }, handleSubmit } = useForm();
+  const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+  const [
+    createUserWithEmailAndPassword,
+    user,
+    loading,
+    error,
+  ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
 
   let signInError;
   let navigate = useNavigate();
@@ -26,18 +31,20 @@ const SignUp = () => {
     }
   }, [gUser, user, from, navigate]);
 
-    if (loading || gLoading) {
+    if (loading || gLoading || updating) {
       return <Loading></Loading>;
     }
 
-    if (error || gError) {
+    if (error || gError || updateError) {
       signInError = (
-        <p className="text-red-500">{error?.message || gError?.message}</p>
+        <p className="text-red-500">{error?.message || gError?.message ||updateError?.message}</p>
       );
     }
 
-  const onSubmit = (data) => {
-    signInWithEmailAndPassword(data.email, data.password);
+  const onSubmit = async(data) => {
+    await createUserWithEmailAndPassword(data.email, data.password);
+    await updateProfile({ displayName: data.name });
+    navigate('/purchase');
   };
   return (
     <div>
@@ -149,7 +156,7 @@ const SignUp = () => {
           <p>
           <small>
             Already Have an account ?
-            <Link className="text-emerald-900" to="/login"> 
+            <Link className="text-primary" to="/login"> 
             Please Login
             </Link>
           </small>

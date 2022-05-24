@@ -15,7 +15,7 @@ const Product = ({ product }) => {
         <h6>Available Quantity : {quantity}</h6>
         <h6>Price : $ {price}</h6>
       </div>
-      <Link to="/purchase"><button className=" btn w-64 rounded-full bg-emerald-900 btn-outline hover:bg-emerald-900 text-white mb-4">see more</button></Link>
+      <Link to="/dashboard"><button className=" btn w-64 rounded-full bg-emerald-900 btn-outline hover:bg-emerald-900 text-white mb-4">see more</button></Link>
     </div>
   );
 };

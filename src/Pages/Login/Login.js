@@ -123,7 +123,7 @@ const Login = () => {
             <p>
               <small>
                 New to Green Bikester ?{" "}
-                <Link className="text-emerald-900" to="/signup">
+                <Link className="text-primary" to="/signup">
                   Create New Account
                 </Link>
               </small>

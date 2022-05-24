@@ -1,7 +1,7 @@
 import React from 'react';
 import AllProducts from './AllProducts';
 
-const Purchases = () => {
+const Dashboard = () => {
     return (
         <div>
             <AllProducts></AllProducts>
@@ -9,4 +9,4 @@ const Purchases = () => {
     );
 };
 
-export default Purchases;
+export default Dashboard;
