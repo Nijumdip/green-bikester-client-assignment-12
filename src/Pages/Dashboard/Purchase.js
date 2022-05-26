@@ -9,7 +9,7 @@ const Purchase = () => {
   const { id } = useParams();
   const [purchase, setPurchase] = useState({});
   const [user, loading, error] = useAuthState(auth);
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset  } = useForm();
 
   useEffect(() => {
     fetch(`https://floating-basin-11908.herokuapp.com/purchase/${id}`)
@@ -26,13 +26,20 @@ const Purchase = () => {
       toast(`your order must be between ${newOrder} and ${newQuantity} !`);
     } else {
       console.log(data);
-      fetch("https://floating-basin-11908.herokuapp.com/", {
+      fetch("https://floating-basin-11908.herokuapp.com/purchase", {
         method: "POST",
         headers: {
           "content-type": "application/json",
         },
         body: JSON.stringify(data),
-      });
+      })
+        .then(res=>res.json())
+          .then(data => {
+              if (data.acknowledged) {
+                toast('purchase successful');
+                reset();
+            }
+        })
     }
   };
 
