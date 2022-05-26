@@ -5,7 +5,7 @@ const Products = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    const url = "http://localhost:5000/service";
+    const url = "https://floating-basin-11908.herokuapp.com/service";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setProducts(data));

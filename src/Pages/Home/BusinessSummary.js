@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const BusinessSummary = () => {
   return (
-    <div className="px-12 pb-10">
+    <div className="px-5 pb-10">
       <div className="flex flex-col w-full border-5 border-opacity-50 lg:w-full">
         <div className="grid h-20 card rounded-box place-items-center text-4xl font-bold text-emerald-900">
           Welcome to Green Bikester

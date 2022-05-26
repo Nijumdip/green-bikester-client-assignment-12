@@ -5,7 +5,7 @@ const AllProducts = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    const url = "http://localhost:5000/service";
+    const url = "https://floating-basin-11908.herokuapp.com/service";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setProducts(data));
@@ -22,11 +22,7 @@ const AllProducts = () => {
       </div>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {products.map((product) => (
-          <AllProduct
-            key={product._id}
-            product={product}
-            
-          ></AllProduct>
+          <AllProduct key={product._id} product={product}></AllProduct>
         ))}
       </div>
     </div>

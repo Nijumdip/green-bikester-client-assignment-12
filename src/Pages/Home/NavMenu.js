@@ -34,7 +34,7 @@ const NavMenu = () => {
                     {menuItems}
                 </ul>
             </div>
-            <Link to="/" className="btn btn-ghost normal-case text-2xl text-emerald-900">Green Bikester <small className='ml-2 mt-2 text-xs text-emerald-900'> Bikeparts menufacturer </small></Link>
+            <Link to="/" className="btn btn-ghost normal-case text-2xl text-emerald-900">Green Bikester <br/> <small className=' mt-2 text-xs text-emerald-900'>Parts manufacturer </small></Link>
         </div>
         <div className="navbar-end hidden lg:flex">
             <ul className="menu menu-horizontal p-0">
